@@ -18,7 +18,7 @@ for i in "${!list[@]}"; do
       open -a "Firefox"; # Open Firefox
       sleep 4; # Wait for browser to load
       echo "Get window ID for screenshot";
-      gcwindow=$(./GetWindowID "Firefox" "Mozilla Firefox Start Page"); # Window ID is needed for screenshot, current ID depends on what your start page is set to
+      gcwindow=$(./GetWindowID "Firefox" "Mozilla Firefox"); # Window ID is needed for screenshot, current ID depends on what your start page is set to
       echo $gcwindow;
       site="${list[$i]}";
       sleep 1; # Not sure this pause is needed anymore
